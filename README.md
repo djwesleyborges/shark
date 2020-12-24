@@ -5,7 +5,7 @@
 
 -------------------------------------------------------------------------------------
 
-# <p align="center"> 𝗦𝗵𝗮𝗿𝗸
+### <p align="center"> 𝗦𝗵𝗮𝗿𝗸
 
 -------------------------------------------------------------------------------------
 
@@ -35,7 +35,7 @@
 
 -------------------------------------------------------------------------------------
 
-## What is Shark??
+### What is Shark??
 
 A shark is a tool that will help you do Phishing in an advanced way so no one checks and identify that you are doing phishing.
 For those guys who Don't know about Phishing let me explain "Phishing is the fraudulent attempt to obtain sensitive information or data, such as usernames, passwords, by disguising oneself as a trustworthy entity in an electronic communication. Typically carried out by email spoofing, instant messaging, and text messaging, phishing often directs users to enter personal information at a fake website which matches the look and feel of the legitimate site."
@@ -46,15 +46,14 @@ Hope you guys like this project, then don't forget to give it a like.
 
 -------------------------------------------------------------------------------------
 
-
-## Operating System Requirements
+### Operating System Requirements
 • **Linux** (Any) <br>
 • **MacOS** <br>
 • **Android** (Using the Termux App {Hackers Keyboard Recommended}) <br>
 
 -------------------------------------------------------------------------------------
 
-## Installation of Shark :-
+### Installation of Shark :-
 
 ### * `Commands` for ( Linux, MacOS ) :-
 ```
@@ -105,7 +104,7 @@ $ shark
 
 -------------------------------------------------------------------------------------
 
-## Legal Disclaimer :
+### Legal Disclaimer :
 
 Usage of the tool for attacking targets without prior mutual consent is illegal. It's the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program
 
