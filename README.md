@@ -22,6 +22,7 @@
 <a href="https://github.com/bhikandeshmukh/followers"><img title="Followers" src="https://img.shields.io/github/followers/bhikandeshmukh?color=blue&style=flat-square"></a>
 <a href="https://github.com/bhikandeshmukh/shark/network/members"><img title="Forks" src="https://img.shields.io/github/forks/bhikandeshmukh/MrBeePack?color=red&style=flat-square"></a>
 <a href="https://github.com/bhikandeshmukh/shark/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/bhikandeshmukh/shark?label=Watchers&color=blue&style=flat-square"></a>
+<a href="#"><img src="https://badges.pufler.dev/visits/bhikandeshmukh/shark">
 </p>
 
 -------------------------------------------------------------------------------------
